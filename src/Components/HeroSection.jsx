@@ -1,6 +1,10 @@
+import ArticleCard from "./ArticleCard"
+
 const HeroSection = () => {
   return (
-    <div>HeroSection</div>
+    <div>
+      <ArticleCard time="69:69" />
+    </div>
   )
 }
 
