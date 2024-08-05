@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": 12345,
+      "name": "BigbyWolf",
+      "email": "dogeman@crazynerd.com",
+      "profilePicture": "https://example.com/profile-picture.jpg",
+      "createdAt": "2020-01-01T00:00:00Z",
+      "bio": "Gamer, writer, and pop culture enthusiast.",
+      "activities": {
+        "posts": [
+          {
+            "content": "Just finished an amazing session of Dark Souls!",
+            "postId": 69696
+          }
+        ],
+        "comments": [
+          {
+            "content": "I totally agree with your thoughts on the game's lore.",
+            "postId": 56789
+          }
+        ],
+        "likes": [
+          {
+            "content": "Liked a post about Dark Souls gameplay tips.",
+            "timestamp": "2024-07-30T14:30:00Z",
+            "postId": 54321
+          }
+        ]
+      }
+    },
+    {
+      "id": 67890,
+      "name": "Shadow",
+      "email": "madman@crazyartist.com",
+      "profilePicture": "https://example.com/jane-profile-picture.jpg",
+      "createdAt": "2021-05-15T00:00:00Z",
+      "bio": "Avid reader, traveler, and amateur photographer.",
+
+      "activities": {
+        "posts": [
+          {
+            "content": "Captured some stunning shots of the Eiffel Tower!",
+            "postId": 96969
+          }
+        ],
+        "comments": [
+          {
+            "content": "Thanks for the book recommendations!",
+            "postId": 12345
+          }
+        ],
+        "likes": [
+          {
+            "content": "Liked a post about travel tips for Paris.",
+            "postId": 98765
+          }
+        ]
+      }
+    }
+  ]
+}

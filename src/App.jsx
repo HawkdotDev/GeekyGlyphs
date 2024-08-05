@@ -1,6 +1,5 @@
-// import ArticleCard from "./Components/ArticleCard"
-// import HeroSection from "./Components/HeroSection"
-import ArticlePage from "./Components/ArticlePage"
+import HeroSection from "./Components/HeroSection"
+// import ArticlePage from "./Components/ArticlePage"
 import Navbar from "./Components/Navbar"
 
 function App() {
@@ -8,8 +7,8 @@ function App() {
     <>
       <main className="w-screen h-screen">
         <Navbar />
-        <ArticlePage />
-        {/* <HeroSection /> */}
+        {/* <ArticlePage /> */}
+        <HeroSection />
         {/* <ArticleCard /> */}
         {/* hero */}
         {/* footer */}
