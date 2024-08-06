@@ -12,7 +12,7 @@ const HorizontalCard = () => {
       <img
         src="https://images8.alphacoders.com/133/1339620.png"
         alt="darksouls1 image"
-        className="border w-40"
+        className="border resize w-1/2 h-1/2" //needs work
       />
     </div>
   );

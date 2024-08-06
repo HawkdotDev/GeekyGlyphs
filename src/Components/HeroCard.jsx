@@ -8,8 +8,8 @@ const HeroCard = () => {
           alt="darksouls1 image"
           className="border"
         />
-        <h1 className="text-xs py-2 text-gray-700">{data.time} pm</h1>
-        <h1 className="font-semibold text-lg mb-2 text-gray-300">
+        <h1 className="text-xs py-1 text-gray-700">{data.time} pm</h1>
+        <h1 className="font-semibold text-xl mb-2 text-gray-300">
           {data.heading}
         </h1>
         <h1 className="pb-3 text-gray-500">{data.intro}</h1>
