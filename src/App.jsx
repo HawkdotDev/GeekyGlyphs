@@ -2,12 +2,10 @@
 // import ArticlePage from "./Components/ArticlePage"
 import Navbar from "./Components/Navbar";
 import HomePage from "./Pages/HomePage";
-import { NextUIProvider } from "@nextui-org/react";
 
 function App() {
   return (
     <>
-      <NextUIProvider>
         <main className="w-screen h-screen">
           <Navbar />
           {/* <ArticlePage /> */}
@@ -15,9 +13,10 @@ function App() {
           {/* <HeroSection /> */}
           {/* <ArticleCard /> */}
           {/* hero */}
-          {/* footer */}
+          <footer className="text-center p-5">
+            laura
+          </footer>
         </main>
-      </NextUIProvider>
     </>
   );
 }

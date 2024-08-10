@@ -4,9 +4,6 @@ import { useState, useRef, useEffect } from "react";
 
 const HamMenu = ({
   options = [],
-  onSelect,
-  placeholder = "Select an option",
-  isMultiSelect = false,
   dropdownClassName = "",
   optionClassName = "",
   placement = "bottom-right",
@@ -16,9 +13,6 @@ const HamMenu = ({
   dropdownHeight = "auto", 
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOptions, setSelectedOptions] = useState(
-    isMultiSelect ? [] : null
-  );
   const buttonRef = useRef(null);
   const dropdownRef = useRef(null);
 
@@ -97,11 +91,6 @@ const handleSelectOption = (option) => {
         ref={buttonRef}
         style={{ width: buttonWidth, height: buttonHeight }}
       >
-        {isMultiSelect && selectedOptions.length > 0
-          ? selectedOptions.map((option) => option.label).join(", ")
-          : selectedOptions
-          ? selectedOptions.label
-          : placeholder}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height={dim}

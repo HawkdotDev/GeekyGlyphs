@@ -12,20 +12,22 @@ const HorizontalCard = ({ time, heading, imageUrl }) => {
       />
       <div className="flex-1 p-1 ">
         <h1 className="text-xs pt-1 text-gray-500">{time} pm</h1>
-        <h1 className="font-semibold text-md text-gray-300 pb-2">
-          {heading}
-        </h1>
+        <h1 className="font-semibold text-md text-gray-300 pb-2">{heading}</h1>
       </div>
     </div>
   );
 };
 
-const ArticleGrid = () => {
-    const articles = Array(6).fill(data);
+// eslint-disable-next-line react/prop-types
+const ArticleGrid = ({ bg }) => {
+  const articles = Array(4).fill(data);
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 px-5 py-3 bg-neutral-900">
+    <div
+      // className={`flex items-center p-[4px] cursor-pointer rounded-sm hover:bg-gray-100 hover:text-black ${optionClassName}`}
+      className={`grid grid-cols-2 border-t lg:grid-cols-3 gap-6 px-5 py-3 bg-neutral-900 ${bg}`}
+    >
       {articles.map((article, index) => (
-        <HorizontalCard 
+        <HorizontalCard
           key={index}
           time={article.time}
           heading={article.heading}

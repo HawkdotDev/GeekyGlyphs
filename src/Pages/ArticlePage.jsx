@@ -1,9 +1,9 @@
 import data from "../Data/articleData.json";
 import staffData from "../Data/staffData.json"
-import ArticleContent from "./ArticleContent";
+import ArticleContent from "../Components/ArticleContent";
 
-// eslint-disable-next-line react/prop-types
-const ArticlePage = () => {
+// eslint-disable-next-line react/prop-types, no-unused-vars
+const ArticlePage = ({articleData}) => {
   const author = staffData.users.find(user => user.id === parseInt(data.authorId, 10));
   const logodim = "18px";
 
