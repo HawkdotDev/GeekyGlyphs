@@ -4,7 +4,7 @@ import HomePage from "./Pages/HomePage";
 function App() {
   return (
     <>
-        <main className="w-screen h-screen">
+        <main className="w-screen h-screen lg:hidden">
           <Navbar />
           <HomePage />
           <footer className="text-center p-5">

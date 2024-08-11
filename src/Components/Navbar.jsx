@@ -17,12 +17,6 @@ const Navbar = () => {
     { label: "Logout", value: "logout" },
   ];
   const options = [
-    // {
-    //   label: "Profile",
-    //   value: "profile",
-    //   onClick: handleProfileClick,
-    // },
-    // { label: "Settings", value: "settings" },
     { label: "some page", value: "some Page" },
     { label: "some page", value: "some Page" },
     { label: "some page", value: "some Page" },
@@ -82,7 +76,7 @@ const Navbar = () => {
         </a>{" "}
         {">"}{" "}
         <a className="cursor-pointer hover:text-pink-500" href="#">
-          eSports & Gaming
+          Discover
         </a>
       </div>
     </div>
