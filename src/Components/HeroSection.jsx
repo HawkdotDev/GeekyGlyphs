@@ -1,6 +1,6 @@
 import HeroCard from "./HeroCard";
 import { Carousel } from "antd";
-import Tag from "../Components/unUsed/Tag";
+import Tag from "./Tag";
 
 const HeroSection = () => {
   return (

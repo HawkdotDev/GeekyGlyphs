@@ -28,16 +28,6 @@ const HomePage = () => {
                 }
               />
             ))}
-            {/* <Tag text="Valorant" color="#dc2626" />
-            <Tag text="CS2" color="#ca8a04" />
-            <Tag text="Genshin" color="#2563eb" />
-            <Tag text="Apex" color="#16a34a" />
-            <Tag text="R6" color="#9333ea" />
-            <Tag text="Valorant" color="#dc2626" />
-            <Tag text="CS2" color="#ca8a04" />
-            <Tag text="Genshin" color="#2563eb" />
-            <Tag text="Apex" color="#16a34a" />
-            <Tag text="R6" color="#9333ea" /> */}
           </div>
         </div>
         <div className="flex justify-end items-baseline">

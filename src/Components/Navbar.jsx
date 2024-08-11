@@ -6,9 +6,8 @@ const Navbar = () => {
   const handleProfileClick = () => {
     alert("Profile Settings Clicked!");
   };
-  const dim = "32";
 
-  const options = [
+  const userOptions = [
     {
       label: "Profile",
       value: "profile",
@@ -17,13 +16,25 @@ const Navbar = () => {
     { label: "Settings", value: "settings" },
     { label: "Logout", value: "logout" },
   ];
+  const options = [
+    // {
+    //   label: "Profile",
+    //   value: "profile",
+    //   onClick: handleProfileClick,
+    // },
+    // { label: "Settings", value: "settings" },
+    { label: "some page", value: "some Page" },
+    { label: "some page", value: "some Page" },
+    { label: "some page", value: "some Page" },
+    { label: "some page", value: "some Page" },
+  ];
   return (
-    <>
+    <div className="select-none">
       <nav className="h-[55px] px-3 flex justify-between items-center border-b-[0.5px] border-gray-600">
         <div id="logo" className="h-[35px] bg-slate-600 w-[35px]"></div>
         <div className="w-[20%] h-[80%] flex justify-between items-center">
           <UserMenu
-            options={options}
+            options={userOptions}
             dropdownClassName="border-gray-200"
             optionClassName="text-gray-200"
             buttonWidth="36px"
@@ -37,8 +48,8 @@ const Navbar = () => {
             optionClassName="text-gray-200"
             buttonWidth="40px"
             buttonHeight="40px"
-            dropdownWidth="150px"
-            dropdownHeight="150px"
+            dropdownWidth="200px"
+            dropdownHeight="300px"
           />
         </div>
       </nav>
@@ -74,7 +85,7 @@ const Navbar = () => {
           eSports & Gaming
         </a>
       </div>
-    </>
+    </div>
   );
 };
 
