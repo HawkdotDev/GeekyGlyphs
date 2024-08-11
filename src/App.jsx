@@ -7,8 +7,8 @@ function App() {
         <main className="w-screen h-screen lg:hidden">
           <Navbar />
           <HomePage />
-          <footer className="text-center p-5">
-            laura
+          <footer className="w-screen h-[40vh] bg-gray-900 flex justify-center p-6"> 
+            Footer section
           </footer>
         </main>
     </>

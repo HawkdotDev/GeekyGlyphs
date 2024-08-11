@@ -6,7 +6,7 @@ import HorizontalCard from "../Components/HorizontalCard"
 // import Tag from "../Components/unUsed/Tag";
 
 const HomePage = () => {
-  const articles = Array(2).fill(data);
+  const articles = Array(8).fill(data);
   return (
     <>
       <HeroSection />
@@ -16,7 +16,7 @@ const HomePage = () => {
             <h1 className="px-3 font-bold text-2xl">Upcoming</h1>
           </div>
 
-          <div className="overflow-auto whitespace-nowrap scrollbar-hide gap-4 flex px-1">
+          <div className="overflow-auto whitespace-nowrap scrollbar-hide gap-3 flex px-1 pl-3">
             {articles.map((article, index) => (
               <HorizontalCard
                 key={index}

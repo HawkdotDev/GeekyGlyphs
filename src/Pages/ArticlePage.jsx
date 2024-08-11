@@ -41,7 +41,6 @@ const ArticlePage = ({articleData}) => {
           <ArticleContent contents={data?.sections} />
         </p>
       </div>
-      <footer className="w-screen h-[40vh] bg-gray-900"></footer>
     </>
   );
 };

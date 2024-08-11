@@ -1,18 +1,21 @@
+/* eslint-disable no-unused-vars */
 // eslint-disable-next-line react/prop-types
 const HorizontalCard = ({ time, heading, imageUrl }) => {
   return (
-    <div className="bg-slate-300 flex p-2 m-2 w-56 h-24 rounded justify-center items-center">
-      <div className="flex-shrink-0">
+    <div className="bg-slate-300 flex p-2 my-2 rounded justify-start items-center w-full max-w-sm md:max-w-md lg:max-w-lg h-24">
+      <div className="flex-shrink-0 w-20 h-20">
         <img
           src={imageUrl}
           alt="Article Image"
-          className="w-20 h-20 object-fill"
+          className="w-full h-full object-cover rounded"
         />
       </div>
-      <div className="px-2">
-        <h1 className="text-sm pt-1 text-gray-500">{time} pm</h1>
-        <h1 className="font-semibold text-xs md:text-md text-gray-700 text-wrap">
-          {heading}
+      <div className="flex-grow px-2 min-w-0">
+        <h1 className="text-xs sm:text-sm text-gray-500">
+          {"tomorrow"}
+        </h1>
+        <h1 className="font-semibold text-xs sm:text-sm md:text-base truncate text-gray-700 whitespace-normal overflow-hidden text-ellipsis">
+          {"souls event by fromSoftware"}
         </h1>
       </div>
     </div>
