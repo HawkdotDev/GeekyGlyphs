@@ -6,24 +6,12 @@ const Navbar = () => {
   const handleProfileClick = () => {
     alert("Profile Settings Clicked!");
   };
-  const dim = "28";
-  const profileSvg = (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      height={dim}
-      viewBox="0 -960 960 960"
-      width={dim}
-      fill="#e8eaed"
-    >
-      <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-    </svg>
-  );
+  const dim = "32";
 
   const options = [
     {
       label: "Profile",
       value: "profile",
-      // icon: profileSvg,
       onClick: handleProfileClick,
     },
     { label: "Settings", value: "settings" },
@@ -34,7 +22,15 @@ const Navbar = () => {
       <nav className="h-[55px] px-3 flex justify-between items-center border-b-[0.5px] border-gray-600">
         <div id="logo" className="h-[35px] bg-slate-600 w-[35px]"></div>
         <div className="w-[20%] h-[80%] flex justify-between items-center">
-          <UserMenu />
+          <UserMenu
+            options={options}
+            dropdownClassName="border-gray-200"
+            optionClassName="text-gray-200"
+            buttonWidth="36px"
+            buttonHeight="36px"
+            dropdownWidth="150px"
+            dropdownHeight="150px"
+          />
           <HamMenu
             options={options}
             dropdownClassName="border-gray-200"
@@ -46,20 +42,26 @@ const Navbar = () => {
           />
         </div>
       </nav>
-      <div className="flex gap-2 bg-slate-800 px-2 overflow-auto whitespace-nowrap scrollbar-hide">
-        <h1 className="inline-block text-center px-4 py-2 cursor-pointer hover:bg-yellow-500 hover:text-white">
+      <div className="flex gap-2 bg-slate-800 px-2 overflow-auto whitespace-nowrap scrollbar-hide sm:justify-evenly">
+        <h1 className="font-semibold inline-block text-center px-4 py-2 cursor-pointer hover:bg-yellow-500 hover:text-black">
           Discover
         </h1>
-        <h1 className="inline-block text-center px-4 py-2 cursor-pointer hover:bg-yellow-500 hover:text-white">
-          eSports & Gaming
+        <h1 className="font-semibold inline-block text-center px-4 py-2 cursor-pointer hover:bg-yellow-500 hover:text-black">
+          Gaming
         </h1>
-        <h1 className="inline-block text-center px-4 py-2 cursor-pointer hover:bg-yellow-500 hover:text-white">
+        <h1 className="font-semibold inline-block text-center px-4 py-2 cursor-pointer hover:bg-yellow-500 hover:text-black">
+          Anime
+        </h1>
+        <h1 className="font-semibold inline-block text-center px-4 py-2 cursor-pointer hover:bg-yellow-500 hover:text-black">
           Film & TV
         </h1>
-        <h1 className="inline-block text-center px-4 py-2 cursor-pointer hover:bg-yellow-500 hover:text-white">
+        <h1 className="font-semibold inline-block text-center px-4 py-2 cursor-pointer hover:bg-yellow-500 hover:text-black">
+          eSports
+        </h1>
+        <h1 className="font-semibold inline-block text-center px-4 py-2 cursor-pointer hover:bg-yellow-500 hover:text-black">
           Tech
         </h1>
-        <h1 className="inline-block text-center px-4 py-2 cursor-pointer hover:bg-yellow-500 hover:text-white">
+        <h1 className="font-semibold inline-block text-center px-4 py-2 cursor-pointer hover:bg-yellow-500 hover:text-black">
           Gossip
         </h1>
       </div>
